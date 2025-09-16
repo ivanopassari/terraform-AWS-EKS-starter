@@ -2,7 +2,7 @@
 
 This project provisions an **Amazon VPC** and an **Amazon Elastic Kubernetes Service (EKS) cluster** using official Terraform community modules.
 
-📖 Notes
+## 📖 Notes
 
 Ensure your AWS profile is configured with proper IAM permissions.
 
@@ -55,16 +55,16 @@ Modify variables for scaling, spot instances, or HA requirements.
    ```bash
    terraform init
 
-3. ** Terraform Plan**
+3. **Terraform Plan**
    ```bash
       terraform plan -var="region=eu-central-1" -var="cluster_name=my-eks" -var="instance_class=t3.medium"
 
-3. ** Create **
+4. **Create**
    ```bash
       terraform apply -auto-approve -var="region=eu-central-1" -var="cluster_name=my-eks" -var="instance_class=t3.medium"
 
 
-3. **🧹 Cleanup** 
+5. **🧹 Cleanup** 
 
 To destroy all resources (to avoid costs):
    ```bash
