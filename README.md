@@ -61,10 +61,7 @@ Modify variables for scaling, spot instances, or HA requirements.
 
 3. ** Create **
    ```bash
-      terraform apply -auto-approve \
-  -var="region=eu-central-1" \
-  -var="cluster_name=my-eks" \
-  -var="instance_class=t3.medium"
+      terraform apply -auto-approve -var="region=eu-central-1" -var="cluster_name=my-eks" -var="instance_class=t3.medium"
 
 
 3. **🧹 Cleanup** 
