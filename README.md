@@ -64,8 +64,6 @@ Modify variables for scaling, spot instances, or HA requirements.
       terraform apply -auto-approve -var="region=eu-central-1" -var="cluster_name=my-eks" -var="instance_class=t3.medium"
 
 
-5. **🧹 Cleanup** 
-
-To destroy all resources (to avoid costs):
+5. **🧹 Cleanup** To destroy all resources (to avoid costs):
    ```bash
       terraform destroy -auto-approve
